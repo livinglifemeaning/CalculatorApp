@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+@import url(./reset.css);
+
+html {
+  --border-radius: 0.5rem;
+  --c-white: hsl(0, 0%, 100%);
+  /* Theme One */
+  --c-blue-background-page: hsl(222, 26%, 31%);
+  --c-blue-background-calc-main: hsl(223, 31%, 20%);
+  --c-blue-background-calc-display: hsl(224, 36%, 15%);
+  --c-blue-btn-main-background: hsl(30, 25%, 89%);
+  --c-blue-btn-main-shadow: hsl(28, 16%, 65%);
+  --c-blue-btn-special-background: hsl(225, 21%, 49%);
+  --c-blue-btn-special-shadow: hsl(224, 28%, 35%);
+  --c-blue-btn-bright-background: hsl(6, 63%, 50%);
+  --c-blue-btn-bright-shadow: hsl(6, 70%, 34%);
+  --c-blue-text-main: hsl(221, 14%, 31%);
+
+  /* Theme Two */
+
+  --c-white-background-page: hsl(0, 0%, 90%);
+  --c-white-background-calc-main: hsl(0, 5%, 81%);
+  --c-white-background-calc-display: hsl(0, 0%, 93%);
+  --c-white-btn-main-background: hsl(45, 7%, 89%);
+  --c-white-btn-main-shadow: hsl(35, 11%, 61%);
+  --c-white-btn-special-background: hsl(185, 42%, 37%);
+  --c-white-btn-special-shadow: hsl(185, 58%, 25%);
+  --c-white-btn-bright-background: hsl(25, 98%, 40%);
+  --c-white-btn-bright-shadow: hsl(25, 99%, 27%);
+  --c-white-text-main: hsl(60, 10%, 19%);
+
+  /* Theme Three */
+  --c-purple-background-page: hsl(268, 75%, 9%);
+  --c-purple-background-calc-main: hsl(268, 71%, 12%);
+  --c-purple-btn-main-background: hsl(268, 47%, 21%);
+  --c-purple-btn-main-shadow: hsl(290, 70%, 36%);
+  --c-purple-btn-special-background: hsl(281, 89%, 26%);
+  --c-purple-btn-special-shadow: hsl(285, 91%, 52%);
+  --c-purple-btn-bright-background: hsl(176, 100%, 44%);
+  --c-purple-btn-bright-shadow: hsl(177, 92%, 70%);
+  --c-purple-text-main: hsl(52, 100%, 62%);
+  --c-purple-text-btn-bright: hsl(198, 20%, 13%);
+}
+
+:root {
+  color-scheme: dark;
+  --background-body: var(--c-blue-background-page);
+  --background-calc-main: var(--c-blue-background-calc-main);
+  --background-calc-display: var(--c-blue-background-calc-display);
+  --background-btn-main: var(--c-blue-btn-main-background);
+  --background-btn-special: var(--c-blue-btn-special-background);
+  --background-btn-bright: var(--c-blue-btn-bright-background);
+  --shadow-btn-main: var(--c-blue-btn-main-shadow);
+  --shadow-btn-special: var(--c-blue-btn-special-shadow);
+  --shadow-btn-bright: var(--c-blue-btn-bright-shadow);
+  --text-page: var(--c-white);
+  --text-btn-main: var(--c-blue-text-main);
+  --text-btn-special: var(--c-white);
+  --text-btn-bright: var(--c-white);
+}
+
+[color-scheme="blue"] {
+  color-scheme: dark;
+  --background-body: var(--c-blue-background-page);
+  --background-calc-main: var(--c-blue-background-calc-main);
+  --background-calc-display: var(--c-blue-background-calc-display);
+  --background-btn-main: var(--c-blue-btn-main-background);
+  --background-btn-special: var(--c-blue-btn-special-background);
+  --background-btn-bright: var(--c-blue-btn-bright-background);
+  --shadow-btn-main: var(--c-blue-btn-main-shadow);
+  --shadow-btn-special: var(--c-blue-btn-special-shadow);
+  --shadow-btn-bright: var(--c-blue-btn-bright-shadow);
+  --text-page: var(--c-white);
+  --text-btn-main: var(--c-blue-text-main);
+  --text-btn-special: var(--c-white);
+  --text-btn-bright: var(--c-white);
+}
+
+[color-scheme="white"] {
+  color-scheme: light;
+  --background-body: var(--c-white-background-page);
+  --background-calc-main: var(--c-white-background-calc-main);
+  --background-calc-display: var(--c-white-background-calc-display);
+  --background-btn-main: var(--c-white-btn-main-background);
+  --background-btn-special: var(--c-white-btn-special-background);
+  --background-btn-bright: var(--c-white-btn-bright-background);
+  --shadow-btn-main: var(--c-white-btn-main-shadow);
+  --shadow-btn-special: var(--c-white-btn-special-shadow);
+  --shadow-btn-bright: var(--c-white-btn-bright-shadow);
+  --text-page: var(--c-white-text-main);
+  --text-btn-main: var(--c-white-text-main);
+  --text-btn-special: var(--c-white);
+  --text-btn-bright: var(--c-white);
+}
+
+[color-scheme="purple"] {
+  color-scheme: dark;
+  --background-body: var(--c-purple-background-page);
+  --background-calc-main: var(--c-purple-background-calc-main);
+  --background-calc-display: var(--c-purple-background-calc-main);
+  --background-btn-main: var(--c-purple-btn-main-background);
+  --background-btn-special: var(--c-purple-btn-special-background);
+  --background-btn-bright: var(--c-purple-btn-bright-background);
+  --shadow-btn-main: var(--c-purple-btn-main-shadow);
+  --shadow-btn-special: var(--c-purple-btn-special-shadow);
+  --shadow-btn-bright: var(--c-purple-btn-bright-shadow);
+  --text-page: var(--c-white);
+  --text-btn-main: var(--c-purple-text-main);
+  --text-btn-special: var(--c-white);
+  --text-btn-bright: var(--c-purple-text-btn-bright);
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  background-color: var(--background-body);
+  padding: 2rem 2rem 2rem; 
+}
+
+
+
+main{
+  max-width: 35rem;  
+  margin: 0 auto;  
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.top-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: var(--text-page);
+}
+
+.calc {
+  font-size: 2rem;
+}
+
+.theme-box {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.theme-box p {
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+}
+.theme-numbers {
+  display: flex;
+  justify-content: space-around;
+}
+.theme-switcher {
+  width: 4rem;
+  padding: 0.2rem;
+  background-color: var(--background-calc-main);
+  border-radius: 2em;
+}
+
+.circle {
+  border: 0; 
+  width: 18px;
+  height: 18px;
+  background-color: var(--background-btn-bright);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: translate 300ms ease-in-out; 
+}
+
+.circle[data-theme = "white"]{
+  translate: 100%
+}
+
+.circle[data-theme = "purple"]{
+  translate: 200%
+}
+
+.calculator-input {
+  margin-block: 1.5rem;
+  background-color: var(--background-calc-display);
+  color: var(--text-page);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  font-size: 3rem;
+  display: grid;
+  place-content: end;
+}
+
+.btn {
+  border-top: none; 
+  border-left: none; 
+  border-right: none; 
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 0.2rem;
+  cursor: pointer;
+}
+
+.btn:active {
+  scale: 0.98;
+}
+
+.btn-main {
+  color: var(--text-btn-main);
+  background-color: var(--background-btn-main);
+  border-bottom: solid 3px var(--shadow-btn-main);
+}
+
+.btn-special {
+  background-color: var(--background-btn-special);
+  font-size: 1.5rem;
+  border-bottom: solid 3px var(--shadow-btn-special);
+  color: var(--text-btn-special);
+}
+
+.btn.btn-bright {
+  background-color: var(--background-btn-bright);
+  border-bottom: solid 3px var(--shadow-btn-bright);
+  color: var(--text-btn-bright);
+}
+/* Calculator Grid */
+.calculator-buttons {
+  background-color: var(--background-calc-main);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  font-size: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "seven eight nine delete"
+    "four five six plus"
+    "one two three minus"
+    "decimal zero divide multiply"
+    "reset reset equal equal";
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.plus {
+  grid-area: plus;
+}
+
+.minus {
+  grid-area: minus;
+}
+
+.divide {
+  grid-area: divide;
+}
+
+.decimal {
+  grid-area: decimal;
+}
+
+.delete {
+  grid-area: delete;
+}
+
+.reset {
+  grid-area: reset;
+}
+
+.equal {
+  grid-area: equal;
+}

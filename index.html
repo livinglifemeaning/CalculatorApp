@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" color-scheme="blue">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <main>
+      <!-- TOP OF PAGE -->
+      <div class="top-box">
+        <p class="calc">calc</p>
+        <div class="theme-box">
+          <p class="uppercase">Theme</p>
+          <div class="theme-switcher-box">
+            <div class="theme-numbers">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+            <div class="theme-switcher">
+              <div class="circle btn-bright" data-theme="blue"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- INPUT RESULTS OF CALCULATOR -->
+      <div class="calculator-input">0</div>
+
+      <!-- INPUT BUTTONS -->
+      <div class="calculator-buttons">
+        <button class="zero btn btn-main" data-action="zero">0</button>
+        <button class="one btn btn-main" data-action="one">1</button>
+        <button class="two btn btn-main" data-action="two">2</button>
+        <button class="three btn btn-main" data-action="three">3</button>
+        <button class="four btn btn-main" data-action="four">4</button>
+        <button class="five btn btn-main" data-action="five">5</button>
+        <button class="six btn btn-main" data-action="six">6</button>
+        <button class="seven btn btn-main" data-action="seven">7</button>
+        <button class="eight btn btn-main" data-action="eight">8</button>
+        <button class="nine btn btn-main" data-action="nine">9</button>
+        <button class="plus btn btn-main" data-action="add">+</button>
+        <button class="minus btn btn-main" data-action="subtract">-</button>
+        <button class="multiply btn btn-main" data-action="multiply">x</button>
+        <button class="divide btn btn-main" data-action="divide">/</button>
+        <button class="decimal btn btn btn-main" data-action="decimal">.</button>
+        <button class="delete btn btn btn-special uppercase" data-action="delete"
+          >Del</button
+        >
+        <button class="reset btn btn btn-special uppercase" data-action="reset"
+          >Reset</button
+        >
+        <button class="btn equal btn btn-bright" data-action="calculate">=</button>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
