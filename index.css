@@ -59,7 +59,7 @@ html {
   --text-btn-bright: var(--c-white);
 }
 
-[color-scheme="blue"] {
+[data-color-scheme="blue"] {
   color-scheme: dark;
   --background-body: var(--c-blue-background-page);
   --background-calc-main: var(--c-blue-background-calc-main);
@@ -76,7 +76,7 @@ html {
   --text-btn-bright: var(--c-white);
 }
 
-[color-scheme="white"] {
+[data-color-scheme="white"] {
   color-scheme: light;
   --background-body: var(--c-white-background-page);
   --background-calc-main: var(--c-white-background-calc-main);
@@ -93,7 +93,7 @@ html {
   --text-btn-bright: var(--c-white);
 }
 
-[color-scheme="purple"] {
+[data-color-scheme="purple"] {
   color-scheme: dark;
   --background-body: var(--c-purple-background-page);
   --background-calc-main: var(--c-purple-background-calc-main);
